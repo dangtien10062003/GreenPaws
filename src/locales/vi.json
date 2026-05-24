@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "pricing": "Bảng giá",
+    "team": "Đội ngũ",
+    "gallery": "Thư viện",
+    "blog": "Blog",
+    "contact": "Liên hệ",
+    "grooming": "Grooming",
+    "spa": "Spa",
+    "training": "Training",
+    "hotel": "Hotel",
+    "bookNow": "Đặt lịch ngay"
+  },
+  "hero": {
+    "badge": "CHĂM SÓC VỚI TÌNH YÊU & THIÊN NHIÊN",
+    "title": "Nơi thú cưng là gia đình",
+    "description": "Trải nghiệm dịch vụ chăm sóc thú cưng cao cấp kết hợp giữa tiêu chuẩn y tế chuyên nghiệp và tình yêu thương vô điều kiện trong không gian xanh mát.",
+    "exploreServices": "Khám phá dịch vụ",
+    "quickBook": "Đặt lịch nhanh"
+  },
+  "services": {
+    "title": "Chăm sóc toàn diện",
+    "subtitle": "Dịch vụ tại Green Paws",
+    "grooming": {
+      "title": "Grooming",
+      "description": "Làm đẹp và vệ sinh chuyên sâu giúp thú cưng luôn sạch sẽ và thơm tho.",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "spa": {
+      "title": "Spa & Relax",
+      "description": "Liệu trình bồn sục thảo dược và massage thư giãn xua tan căng thẳng.",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "training": {
+      "title": "Training",
+      "description": "Huấn luyện thói quen tốt với phương pháp tích cực và hiện đại.",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "hotel": {
+      "title": "Pet Hotel",
+      "description": "Không gian lưu trú chuẩn 5 sao với sự giám sát 24/7 của chuyên gia.",
+      "learnMore": "Tìm hiểu thêm"
+    }
+  },
+  "testimonials": {
+    "title": "Cảm nhận từ khách hàng thân thiết",
+    "subtitle": "Chúng tôi tự hào khi trở thành người bạn đồng hành tin cậy của hàng ngàn gia đình thú cưng tại Việt Nam.",
+    "stats": "+2,500 Khách hàng hài lòng",
+    "quote": "Green Paws thực sự khác biệt. Không gian ở đây rất thoáng và sạch, nhân viên chăm sóc bé nhà mình vô cùng tận tình. Từ khi sử dụng gói Spa thảo dược, bé luôn khỏe mạnh và vui vẻ hơn hẳn. Rất an tâm khi gửi gắm!",
+    "author": "Chị Minh Anh",
+    "authorDetail": "Chủ của bé Poodle \"Bông\""
+  },
+  "cta": {
+    "title": "Sẵn sàng để bé cưng được trải nghiệm?",
+    "description": "Đăng ký ngay để nhận ưu đãi 20% cho lần sử dụng dịch vụ đầu tiên tại Green Paws.",
+    "button": "Đăng ký ngay"
+  },
+  "footer": {
+    "tagline": "Kiến tạo hệ sinh thái chăm sóc thú cưng bền vững và nhân văn hàng đầu Việt Nam.",
+    "services": {
+      "title": "Dịch vụ",
+      "grooming": "Grooming & Vệ sinh",
+      "spa": "Spa & Massage",
+      "training": "Huấn luyện chuyên sâu",
+      "hotel": "Khách sạn 5 sao"
+    },
+    "about": {
+      "title": "Về chúng tôi",
+      "story": "Câu chuyện thương hiệu",
+      "team": "Đội ngũ chuyên gia",
+      "privacy": "Chính sách bảo mật",
+      "contact": "Liên hệ hỗ trợ"
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "address": "123 Đường Thảo Điền, Quận 2, TP. Hồ Chí Minh",
+      "phone": "1900 888 666",
+      "email": "hello@greenpaws.vn"
+    },
+    "copyright": "© 2024 Green Paws. Designed with love for our pet family."
+  },
+  "booking": {
+    "title": "Đặt lịch dịch vụ",
+    "step1": "Chọn dịch vụ",
+    "step2": "Chọn thời gian",
+    "step3": "Thông tin thú cưng",
+    "selectService": "Chọn dịch vụ",
+    "selectPetType": "Loại thú cưng",
+    "dog": "Chó",
+    "cat": "Mèo",
+    "rabbit": "Thỏ",
+    "selectDate": "Chọn ngày",
+    "selectTime": "Chọn giờ",
+    "selectStaff": "Chọn nhân viên (tùy chọn)",
+    "petName": "Tên thú cưng",
+    "petWeight": "Cân nặng (kg)",
+    "ownerName": "Tên chủ nhân",
+    "ownerPhone": "Số điện thoại",
+    "ownerEmail": "Email",
+    "notes": "Ghi chú đặc biệt",
+    "submit": "Xác nhận đặt lịch",
+    "cancel": "Hủy"
+  }
+}

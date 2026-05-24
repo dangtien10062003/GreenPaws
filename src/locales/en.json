@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "About Us",
+    "services": "Services",
+    "pricing": "Pricing",
+    "team": "Team",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact",
+    "grooming": "Grooming",
+    "spa": "Spa",
+    "training": "Training",
+    "hotel": "Hotel",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "badge": "CARE WITH LOVE & NATURE",
+    "title": "Where Pets Are Family",
+    "description": "Experience premium pet care services combining professional medical standards with unconditional love in a refreshing green space.",
+    "exploreServices": "Explore Services",
+    "quickBook": "Quick Booking"
+  },
+  "services": {
+    "title": "Comprehensive Care",
+    "subtitle": "Services at Green Paws",
+    "grooming": {
+      "title": "Grooming",
+      "description": "Professional grooming and deep cleaning to keep your pet fresh and clean.",
+      "learnMore": "Learn More"
+    },
+    "spa": {
+      "title": "Spa & Relax",
+      "description": "Herbal bath therapy and relaxing massage to relieve stress.",
+      "learnMore": "Learn More"
+    },
+    "training": {
+      "title": "Training",
+      "description": "Build good habits with positive and modern training methods.",
+      "learnMore": "Learn More"
+    },
+    "hotel": {
+      "title": "Pet Hotel",
+      "description": "5-star accommodation with 24/7 expert supervision.",
+      "learnMore": "Learn More"
+    }
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "We are proud to be a trusted companion for thousands of pet families in Vietnam.",
+    "stats": "+2,500 Happy Customers",
+    "quote": "Green Paws is truly different. The space here is very airy and clean, the staff takes care of my pet very attentively. Since using the herbal Spa package, my pet has been much healthier and happier. Very reassuring!",
+    "author": "Ms. Minh Anh",
+    "authorDetail": "Owner of Poodle \"Bông\""
+  },
+  "cta": {
+    "title": "Ready for your pet to experience?",
+    "description": "Register now to receive 20% off your first service at Green Paws.",
+    "button": "Register Now"
+  },
+  "footer": {
+    "tagline": "Building Vietnam's leading sustainable and humane pet care ecosystem.",
+    "services": {
+      "title": "Services",
+      "grooming": "Grooming & Hygiene",
+      "spa": "Spa & Massage",
+      "training": "Professional Training",
+      "hotel": "5-Star Hotel"
+    },
+    "about": {
+      "title": "About Us",
+      "story": "Brand Story",
+      "team": "Expert Team",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Support"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "123 Thao Dien Street, District 2, Ho Chi Minh City",
+      "phone": "1900 888 666",
+      "email": "hello@greenpaws.vn"
+    },
+    "copyright": "© 2024 Green Paws. Designed with love for our pet family."
+  },
+  "booking": {
+    "title": "Book Service",
+    "step1": "Select Service",
+    "step2": "Select Time",
+    "step3": "Pet Information",
+    "selectService": "Select Service",
+    "selectPetType": "Pet Type",
+    "dog": "Dog",
+    "cat": "Cat",
+    "rabbit": "Rabbit",
+    "selectDate": "Select Date",
+    "selectTime": "Select Time",
+    "selectStaff": "Select Staff (optional)",
+    "petName": "Pet Name",
+    "petWeight": "Weight (kg)",
+    "ownerName": "Owner Name",
+    "ownerPhone": "Phone Number",
+    "ownerEmail": "Email",
+    "notes": "Special Notes",
+    "submit": "Confirm Booking",
+    "cancel": "Cancel"
+  }
+}
