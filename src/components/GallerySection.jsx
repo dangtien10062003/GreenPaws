@@ -41,14 +41,14 @@ const GallerySection = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-neutral-100">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-secondary-50/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-secondary-500 font-semibold text-sm uppercase tracking-wide">
             {language === 'vi' ? 'Thư viện hình ảnh' : 'Gallery'}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mt-4 mb-4">
             {language === 'vi' 
               ? 'Khoảnh khắc hạnh phúc tại Green Paws'
               : 'Happy Moments at Green Paws'}
@@ -64,7 +64,7 @@ const GallerySection = () => {
               className={`px-6 py-2.5 rounded-full font-medium transition-all ${
                 activeCategory === category.id
                   ? 'bg-primary-500 text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                  : 'bg-white text-primary-700/85 hover:bg-secondary-50 hover:text-primary-600 border border-primary-100'
               }`}
             >
               {category.label}
@@ -77,7 +77,7 @@ const GallerySection = () => {
           {filteredGallery.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border border-primary-100 bg-white/90"
               onClick={() => openLightbox(item)}
             >
               <img
@@ -87,13 +87,13 @@ const GallerySection = () => {
               />
               {item.type === 'video' && (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-xl">
+                  <div className="w-16 h-16 bg-white/95 rounded-full flex items-center justify-center shadow-xl ring-1 ring-primary-100">
                     <span className="material-icons text-primary-600 text-3xl">play_arrow</span>
                   </div>
                 </div>
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                <button className="bg-white text-primary-600 px-6 py-2 rounded-full font-medium hover:bg-primary-500 hover:text-white transition-colors">
+                <button className="bg-white text-primary-600 px-6 py-2 rounded-full font-medium hover:bg-secondary-400 hover:text-white transition-colors">
                   <span className="material-icons text-sm align-middle mr-1">zoom_in</span>
                   {language === 'vi' ? 'Xem' : 'View'}
                 </button>
@@ -137,7 +137,7 @@ const GallerySection = () => {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="inline-flex items-center px-8 py-3 bg-white text-primary-600 rounded-full hover:bg-primary-500 hover:text-white transition-all shadow-md hover:shadow-lg font-medium border-2 border-primary-200">
+          <button className="inline-flex items-center px-8 py-3 bg-white text-primary-600 rounded-full hover:bg-secondary-400 hover:text-white transition-all shadow-md hover:shadow-lg font-medium border-2 border-primary-200">
             {language === 'vi' ? 'Xem thêm' : 'Load More'}
             <span className="material-icons ml-2">expand_more</span>
           </button>

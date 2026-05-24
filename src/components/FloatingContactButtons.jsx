@@ -46,8 +46,8 @@ const FloatingContactButtons = () => {
 
   return (
     <>
-      {/* Floating Contact Buttons - Desktop & Mobile */}
-      <div className="fixed bottom-24 right-6 z-40 flex flex-col items-end space-y-3">
+      {/* Floating Contact Buttons - Desktop */}
+      <div className="fixed bottom-24 right-6 z-40 hidden lg:flex flex-col items-end space-y-3">
         {/* Expanded Contact Options */}
         <div
           className={`flex flex-col space-y-3 transition-all duration-300 ${
@@ -92,14 +92,14 @@ const FloatingContactButtons = () => {
       </div>
 
       {/* Quick Contact Bar - Bottom (Mobile Friendly) */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-neutral-300 shadow-ambient-lg lg:hidden">
-        <div className="grid grid-cols-4 divide-x divide-neutral-200">
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-neutral-200 bg-white/95 backdrop-blur-sm shadow-ambient-lg lg:hidden pb-[env(safe-area-inset-bottom)]">
+        <div className="grid grid-cols-4 gap-2 px-3 py-2">
           <a
             href="tel:1900888666"
-            className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"
+            className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-primary-50 active:bg-primary-100 transition-colors"
           >
-            <span className="material-icons text-primary-600 text-xl mb-1">phone</span>
-            <span className="text-xs text-neutral-700 font-medium">
+            <span className="material-icons text-primary-600 text-xl">phone</span>
+            <span className="text-[11px] text-neutral-700 font-semibold mt-1">
               {language === 'vi' ? 'Gọi' : 'Call'}
             </span>
           </a>
@@ -107,26 +107,26 @@ const FloatingContactButtons = () => {
             href="https://zalo.me/1900888666"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center py-3 hover:bg-blue-50 transition-colors active:bg-blue-100"
+            className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-blue-50 active:bg-blue-100 transition-colors"
           >
-            <span className="material-icons text-blue-500 text-xl mb-1">chat</span>
-            <span className="text-xs text-neutral-700 font-medium">Zalo</span>
+            <span className="material-icons text-blue-500 text-xl">chat</span>
+            <span className="text-[11px] text-neutral-700 font-semibold mt-1">Zalo</span>
           </a>
           <a
             href="https://m.me/greenpaws"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center py-3 hover:bg-blue-50 transition-colors active:bg-blue-100"
+            className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-indigo-50 active:bg-indigo-100 transition-colors"
           >
-            <span className="material-icons text-blue-600 text-xl mb-1">message</span>
-            <span className="text-xs text-neutral-700 font-medium">Messenger</span>
+            <span className="material-icons text-indigo-500 text-xl">message</span>
+            <span className="text-[11px] text-neutral-700 font-semibold mt-1">Messenger</span>
           </a>
           <a
             href="/booking"
-            className="flex flex-col items-center justify-center py-3 hover:bg-secondary-50 transition-colors active:bg-secondary-100"
+            className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-secondary-50 active:bg-secondary-100 transition-colors"
           >
-            <span className="material-icons text-secondary-600 text-xl mb-1">calendar_today</span>
-            <span className="text-xs text-neutral-700 font-medium">
+            <span className="material-icons text-secondary-600 text-xl">calendar_today</span>
+            <span className="text-[11px] text-neutral-700 font-semibold mt-1">
               {language === 'vi' ? 'Đặt lịch' : 'Book'}
             </span>
           </a>
@@ -134,7 +134,7 @@ const FloatingContactButtons = () => {
       </div>
 
       {/* Spacer for mobile bottom bar */}
-      <div className="h-16 lg:hidden"></div>
+      <div className="h-20 lg:hidden"></div>
     </>
   );
 };

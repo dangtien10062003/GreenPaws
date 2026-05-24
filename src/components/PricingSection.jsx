@@ -55,19 +55,19 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-secondary-50/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-secondary-500 font-semibold text-sm uppercase tracking-wide">
             {language === 'vi' ? 'Bảng giá' : 'Pricing'}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mt-4 mb-4">
             {language === 'vi' 
               ? 'Chọn gói dịch vụ phù hợp'
               : 'Choose The Right Package'}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-primary-700/80">
             {language === 'vi'
               ? 'Tiết kiệm hơn với các gói dịch vụ theo tháng'
               : 'Save more with monthly service packages'}
@@ -76,13 +76,13 @@ const PricingSection = () => {
 
         {/* Pricing Toggle */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-full p-1.5 shadow-lg inline-flex items-center space-x-2">
+          <div className="bg-white/95 rounded-full p-1.5 shadow-lg inline-flex items-center space-x-2 border border-primary-100">
             <button
               onClick={() => setIsMonthly(true)}
               className={`px-6 py-2.5 rounded-full font-semibold transition-all ${
                 isMonthly
                   ? 'bg-primary-500 text-white shadow-md'
-                  : 'text-gray-600 hover:text-gray-900'
+                  : 'text-primary-700/80 hover:text-primary-800'
               }`}
             >
               {language === 'vi' ? 'Lần lẻ' : 'One-time'}
@@ -92,7 +92,7 @@ const PricingSection = () => {
               className={`px-6 py-2.5 rounded-full font-semibold transition-all relative ${
                 !isMonthly
                   ? 'bg-primary-500 text-white shadow-md'
-                  : 'text-gray-600 hover:text-gray-900'
+                  : 'text-primary-700/80 hover:text-primary-800'
               }`}
             >
               {language === 'vi' ? 'Gói Membership' : 'Membership'}
@@ -110,8 +110,8 @@ const PricingSection = () => {
               key={index}
               className={`relative rounded-3xl p-8 ${
                 pkg.popular
-                  ? 'bg-gradient-to-br from-primary-500 to-primary-600 text-white shadow-2xl scale-105'
-                  : 'bg-white border-2 border-gray-200 hover:border-primary-300 shadow-lg'
+                  ? 'bg-gradient-to-br from-secondary-400 to-primary-500 text-white shadow-2xl scale-105'
+                  : 'bg-white/95 border-2 border-primary-100 hover:border-secondary-200 shadow-lg'
               } transition-all duration-300`}
             >
               {pkg.popular && (
@@ -123,25 +123,25 @@ const PricingSection = () => {
               )}
 
               <div className="text-center mb-6">
-                <h3 className={`text-2xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-gray-900'}`}>
+                <h3 className={`text-2xl font-bold mb-2 ${pkg.popular ? 'text-white' : 'text-primary-800'}`}>
                   {pkg.name}
                 </h3>
-                <p className={`text-sm ${pkg.popular ? 'text-primary-100' : 'text-gray-600'}`}>
+                <p className={`text-sm ${pkg.popular ? 'text-primary-100' : 'text-primary-700/80'}`}>
                   {pkg.description}
                 </p>
               </div>
 
               <div className="text-center mb-8">
                 <div className="flex items-end justify-center">
-                  <span className={`text-5xl font-bold ${pkg.popular ? 'text-white' : 'text-gray-900'}`}>
+                  <span className={`text-5xl font-bold ${pkg.popular ? 'text-white' : 'text-primary-800'}`}>
                     {isMonthly ? pkg.priceMonthly : pkg.priceMembership}
                   </span>
-                  <span className={`text-lg ml-2 mb-2 ${pkg.popular ? 'text-primary-100' : 'text-gray-600'}`}>
+                  <span className={`text-lg ml-2 mb-2 ${pkg.popular ? 'text-primary-100' : 'text-primary-700/80'}`}>
                     VNĐ{pkg.period}
                   </span>
                 </div>
                 {!isMonthly && (
-                  <p className={`text-sm mt-2 ${pkg.popular ? 'text-primary-100' : 'text-gray-500'}`}>
+                  <p className={`text-sm mt-2 ${pkg.popular ? 'text-primary-100' : 'text-primary-700/70'}`}>
                     {language === 'vi' ? 'Tiết kiệm 15%' : 'Save 15%'}
                   </p>
                 )}
@@ -155,7 +155,7 @@ const PricingSection = () => {
                     }`}>
                       check_circle
                     </span>
-                    <span className={pkg.popular ? 'text-primary-50' : 'text-gray-700'}>
+                    <span className={pkg.popular ? 'text-primary-50' : 'text-primary-700/85'}>
                       {feature}
                     </span>
                   </li>
@@ -166,8 +166,8 @@ const PricingSection = () => {
                 to="/booking"
                 className={`block w-full py-3.5 rounded-full font-semibold text-center transition-all ${
                   pkg.popular
-                    ? 'bg-white text-primary-600 hover:bg-primary-50'
-                    : 'bg-primary-500 text-white hover:bg-primary-600'
+                    ? 'bg-white text-primary-600 hover:bg-secondary-50'
+                    : 'bg-primary-500 text-white hover:bg-secondary-500'
                 }`}
               >
                 {language === 'vi' ? 'Chọn gói này' : 'Choose Package'}
@@ -178,7 +178,7 @@ const PricingSection = () => {
 
         {/* Bottom Note */}
         <div className="text-center mt-12">
-          <p className="text-gray-600">
+          <p className="text-primary-700/80">
             {language === 'vi'
               ? '💡 Tất cả gói dịch vụ đều có thể hủy bất cứ lúc nào. Không ràng buộc dài hạn.'
               : '💡 All packages can be cancelled anytime. No long-term commitment.'}

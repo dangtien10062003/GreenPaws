@@ -74,19 +74,19 @@ const WhyChooseUsSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-secondary-50 via-white to-primary-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-secondary-500 font-semibold text-sm uppercase tracking-wide">
             {language === 'vi' ? 'Tại sao chọn chúng tôi' : 'Why Choose Us'}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mt-4 mb-4">
             {language === 'vi' 
               ? 'Điều gì làm nên sự khác biệt của Green Paws?'
               : 'What Makes Green Paws Different?'}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-primary-700/80">
             {language === 'vi'
               ? 'Chúng tôi cam kết mang đến dịch vụ chăm sóc thú cưng tốt nhất với sự kết hợp hoàn hảo giữa chuyên môn và tình yêu thương'
               : 'We are committed to providing the best pet care services with a perfect combination of expertise and love'}
@@ -98,13 +98,13 @@ const WhyChooseUsSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+              className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group border border-primary-100"
             >
               <div className="text-5xl mb-4">{feature.customIcon}</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-primary-800 mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-primary-700/80 leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -112,31 +112,31 @@ const WhyChooseUsSection = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="bg-gradient-to-r from-primary-500 to-primary-600 px-6 py-4">
+        <div className="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden border border-primary-100">
+          <div className="bg-gradient-to-r from-secondary-400 to-primary-500 px-6 py-4">
             <h3 className="text-xl font-bold text-white text-center">
               {language === 'vi' ? 'So sánh với dịch vụ thông thường' : 'Comparison with Regular Services'}
             </h3>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-gray-50">
+              <thead className="bg-primary-50/60">
                 <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">
+                  <th className="px-6 py-4 text-left text-sm font-semibold text-primary-800">
                     {language === 'vi' ? 'Tiêu chí' : 'Criteria'}
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-semibold text-primary-600">
                     Green Paws
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-gray-600">
+                  <th className="px-6 py-4 text-center text-sm font-semibold text-primary-700/80">
                     {language === 'vi' ? 'Dịch vụ khác' : 'Others'}
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody className="divide-y divide-primary-100">
                 {comparison.map((item, index) => (
-                  <tr key={index} className="hover:bg-gray-50 transition-colors">
-                    <td className="px-6 py-4 text-sm text-gray-900 font-medium">{item.feature}</td>
+                  <tr key={index} className="hover:bg-secondary-50/70 transition-colors">
+                    <td className="px-6 py-4 text-sm text-primary-800 font-medium">{item.feature}</td>
                     <td className="px-6 py-4 text-center">
                       <span className="inline-flex items-center text-sm font-semibold text-primary-600">
                         <span className="material-icons text-sm mr-1">check_circle</span>
@@ -144,7 +144,7 @@ const WhyChooseUsSection = () => {
                       </span>
                     </td>
                     <td className="px-6 py-4 text-center">
-                      <span className="text-sm text-gray-500">{item.others}</span>
+                      <span className="text-sm text-primary-700/70">{item.others}</span>
                     </td>
                   </tr>
                 ))}
@@ -155,9 +155,9 @@ const WhyChooseUsSection = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-full shadow-md">
+          <div className="inline-flex items-center space-x-2 bg-white/95 px-6 py-3 rounded-full shadow-md border border-primary-100">
             <span className="material-icons text-primary-600">check_circle</span>
-            <span className="font-semibold text-gray-900">
+            <span className="font-semibold text-primary-800">
               {language === 'vi' 
                 ? 'Được hơn 2,500+ khách hàng tin tưởng'
                 : 'Trusted by 2,500+ customers'}

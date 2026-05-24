@@ -40,19 +40,19 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-secondary-50/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
+          <span className="text-secondary-500 font-semibold text-sm uppercase tracking-wide">
             {language === 'vi' ? 'Đội ngũ của chúng tôi' : 'Our Team'}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mt-4 mb-4">
             {language === 'vi' 
               ? 'Gặp gỡ các chuyên gia của chúng tôi'
               : 'Meet Our Experts'}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-primary-700/80">
             {language === 'vi'
               ? 'Đội ngũ chuyên gia giàu kinh nghiệm, tận tâm và yêu thương động vật'
               : 'Experienced, dedicated team who love animals'}
@@ -66,7 +66,7 @@ const TeamSection = () => {
               key={index}
               className="group"
             >
-              <div className="relative overflow-hidden rounded-2xl mb-4">
+              <div className="relative overflow-hidden rounded-2xl mb-4 border border-primary-100 shadow-md">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -76,17 +76,17 @@ const TeamSection = () => {
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex items-center justify-center space-x-3">
                       {member.social.facebook && (
-                        <a href={member.social.facebook} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
+                        <a href={member.social.facebook} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-secondary-400 hover:text-white transition-colors">
                           <span className="material-icons text-sm">facebook</span>
                         </a>
                       )}
                       {member.social.instagram && (
-                        <a href={member.social.instagram} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
+                        <a href={member.social.instagram} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-secondary-400 hover:text-white transition-colors">
                           <span className="material-icons text-sm">camera_alt</span>
                         </a>
                       )}
                       {member.social.linkedin && (
-                        <a href={member.social.linkedin} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors">
+                        <a href={member.social.linkedin} className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-secondary-400 hover:text-white transition-colors">
                           <span className="material-icons text-sm">work</span>
                         </a>
                       )}
@@ -95,19 +95,19 @@ const TeamSection = () => {
                 </div>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                <h3 className="text-xl font-bold text-primary-800 mb-1">
                   {member.name}
                 </h3>
                 <p className="text-primary-600 font-medium mb-2">
                   {member.role}
                 </p>
-                <p className="text-sm text-gray-600 mb-3">
+                <p className="text-sm text-primary-700/80 mb-3">
                   {member.specialty}
                 </p>
                 {/* Expertise Tags */}
                 <div className="flex flex-wrap justify-center gap-2">
                   {member.expertiseTags.map((tag, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-medium rounded-full">
+                    <span key={idx} className="px-3 py-1 bg-secondary-50 text-primary-700 text-xs font-medium rounded-full border border-primary-100">
                       {tag}
                     </span>
                   ))}
@@ -118,8 +118,8 @@ const TeamSection = () => {
         </div>
 
         {/* Bottom Text */}
-        <div className="text-center mt-12 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl p-8">
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+        <div className="text-center mt-12 bg-gradient-to-r from-secondary-50 to-primary-50 rounded-2xl p-8 border border-primary-100">
+          <p className="text-lg text-primary-700/85 max-w-3xl mx-auto">
             {language === 'vi'
               ? '💚 Tất cả thành viên trong đội ngũ của chúng tôi đều được đào tạo chuyên sâu và có chứng chỉ hành nghề. Chúng tôi không ngừng học hỏi và cập nhật kiến thức để mang đến dịch vụ tốt nhất cho thú cưng của bạn.'
               : '💚 All our team members are professionally trained and certified. We continuously learn and update our knowledge to provide the best service for your pets.'}

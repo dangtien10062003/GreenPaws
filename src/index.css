@@ -1,17 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --surface-bg: #fbf9f4;
+    --surface-card: rgba(255, 255, 255, 0.9);
+    --text-main: #1b1c19;
+    --focus-ring: rgba(110, 176, 75, 0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    background-color: #fbf9f4;
-    color: #1b1c19;
-    font-family: 'Manrope', system-ui, sans-serif;
+    background-color: var(--surface-bg);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  a, button, input, select, textarea {
+    @apply outline-none;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    box-shadow: 0 0 0 3px var(--focus-ring);
+    border-radius: 0.75rem;
   }
 }
 
@@ -23,7 +47,26 @@
   .animate-bounce-slow {
     animation: bounce 3s infinite;
   }
-  
+
+  .animate-fade-up {
+    animation: fadeUp 700ms ease-out forwards;
+  }
+
+  .transition-premium {
+    transition: all 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .glass-card {
+    background: var(--surface-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 20px 40px rgba(16, 24, 40, 0.08);
+  }
+
+  .section-shell {
+    @apply rounded-3xl border border-primary-100/70 bg-white/85 shadow-[0_12px_30px_rgba(0,0,0,0.06)];
+  }
+
   @keyframes bounce {
     0%, 100% {
       transform: translateY(0);
@@ -33,6 +76,17 @@
     }
   }
   
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Subtle texture overlay for eco-friendly feel */
   .texture-overlay {
     position: relative;

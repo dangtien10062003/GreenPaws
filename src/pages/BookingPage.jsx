@@ -67,58 +67,58 @@ const BookingPage = () => {
       <div className="fixed bottom-24 right-6 z-40 hidden lg:flex flex-col gap-3">
         <a
           href="tel:1900888666"
-          className="w-12 h-12 rounded-lg bg-white shadow-ambient-lg hover:shadow-ambient border-2 border-primary-200 flex items-center justify-center transition-all hover:scale-110 group"
+          className="w-12 h-12 rounded-full bg-white border border-primary-200 shadow-md hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 group"
           title="Hotline: 1900 888 666"
         >
-          <span className="material-icons text-primary-600 group-hover:scale-110 transition-transform">call</span>
+          <span className="material-icons text-primary-600 group-hover:text-primary-700 transition-colors">call</span>
         </a>
         <a
           href="https://zalo.me/1900888666"
           target="_blank"
           rel="noreferrer"
-          className="w-12 h-12 rounded-lg bg-white shadow-ambient-lg hover:shadow-ambient border-2 border-blue-200 flex items-center justify-center transition-all hover:scale-110 group"
+          className="w-12 h-12 rounded-full bg-white border border-primary-200 shadow-md hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 group"
           title="Chat Zalo"
         >
-          <span className="material-icons text-blue-500 group-hover:scale-110 transition-transform">chat</span>
+          <span className="material-icons text-primary-600 group-hover:text-primary-700 transition-colors">chat</span>
         </a>
         <a
           href="https://m.me/greenpaws"
           target="_blank"
           rel="noreferrer"
-          className="w-12 h-12 rounded-lg bg-white shadow-ambient-lg hover:shadow-ambient border-2 border-blue-200 flex items-center justify-center transition-all hover:scale-110 group"
+          className="w-12 h-12 rounded-full bg-white border border-primary-200 shadow-md hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 group"
           title="Messenger"
         >
-          <span className="material-icons text-blue-600 group-hover:scale-110 transition-transform">message</span>
+          <span className="material-icons text-primary-600 group-hover:text-primary-700 transition-colors">message</span>
         </a>
       </div>
 
       {/* Mobile Bottom Contact Bar for Booking */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-neutral-300 shadow-ambient-lg lg:hidden">
-        <div className="grid grid-cols-3 divide-x divide-neutral-200">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-primary-100 shadow-lg lg:hidden">
+        <div className="grid grid-cols-3 divide-x divide-primary-100">
           <a
             href="tel:1900888666"
             className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"
           >
             <span className="material-icons text-primary-600 text-xl mb-1">phone</span>
-            <span className="text-xs text-neutral-700 font-medium">Gọi ngay</span>
+            <span className="text-xs text-primary-700 font-medium">Gọi ngay</span>
           </a>
           <a
             href="https://zalo.me/1900888666"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center py-3 hover:bg-blue-50 transition-colors active:bg-blue-100"
+            className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"
           >
-            <span className="material-icons text-blue-500 text-xl mb-1">chat</span>
-            <span className="text-xs text-neutral-700 font-medium">Zalo</span>
+            <span className="material-icons text-primary-600 text-xl mb-1">chat</span>
+            <span className="text-xs text-primary-700 font-medium">Zalo</span>
           </a>
           <a
             href="https://m.me/greenpaws"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center py-3 hover:bg-blue-50 transition-colors active:bg-blue-100"
+            className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"
           >
-            <span className="material-icons text-blue-600 text-xl mb-1">message</span>
-            <span className="text-xs text-neutral-700 font-medium">Messenger</span>
+            <span className="material-icons text-primary-600 text-xl mb-1">message</span>
+            <span className="text-xs text-primary-700 font-medium">Messenger</span>
           </a>
         </div>
       </div>

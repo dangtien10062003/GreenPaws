@@ -45,21 +45,21 @@ const TestimonialsSection = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-tertiary-50">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-secondary-50 via-white to-primary-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-primary-700/80">
             {t('testimonials.subtitle')}
           </p>
         </div>
 
         {/* Stats */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-2xl shadow-lg px-8 py-6 inline-flex items-center space-x-4">
+          <div className="bg-white/95 rounded-2xl shadow-lg px-8 py-6 inline-flex items-center space-x-4 border border-primary-100">
             <div className="flex -space-x-2">
               {[1, 2, 3, 4].map((i) => (
                 <div
@@ -71,16 +71,16 @@ const TestimonialsSection = () => {
               ))}
             </div>
             <div>
-              <p className="text-2xl font-bold text-gray-900">{t('testimonials.stats')}</p>
+              <p className="text-2xl font-bold text-primary-800">{t('testimonials.stats')}</p>
             </div>
           </div>
         </div>
 
         {/* Testimonial Card with Carousel */}
         <div className="max-w-4xl mx-auto relative">
-          <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 relative">
+          <div className="bg-white/95 rounded-3xl shadow-xl p-8 lg:p-12 relative border border-primary-100">
             {/* Quote Icon */}
-            <div className="absolute -top-6 left-8 w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center shadow-lg">
+            <div className="absolute -top-6 left-8 w-12 h-12 bg-secondary-400 rounded-full flex items-center justify-center shadow-lg">
               <span className="material-icons text-white">format_quote</span>
             </div>
 
@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
 
             {/* Quote */}
             <blockquote className="text-center mb-8">
-              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed italic">
+              <p className="text-lg lg:text-xl text-primary-700/85 leading-relaxed italic">
                 "{currentTestimonial.quote}"
               </p>
             </blockquote>
@@ -129,8 +129,8 @@ const TestimonialsSection = () => {
             {/* Author */}
             <div className="flex flex-col items-center space-y-2">
               <div className="text-center">
-                <p className="font-bold text-gray-900 text-lg">{currentTestimonial.author}</p>
-                <p className="text-sm text-gray-600">{currentTestimonial.authorDetail}</p>
+                <p className="font-bold text-primary-800 text-lg">{currentTestimonial.author}</p>
+                <p className="text-sm text-primary-700/80">{currentTestimonial.authorDetail}</p>
               </div>
             </div>
 
@@ -141,7 +141,7 @@ const TestimonialsSection = () => {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2.5 h-2.5 rounded-full transition-all ${
-                    index === currentIndex ? 'bg-primary-500 w-8' : 'bg-gray-300'
+                    index === currentIndex ? 'bg-secondary-400 w-8' : 'bg-primary-200'
                   }`}
                 />
               ))}
@@ -151,13 +151,13 @@ const TestimonialsSection = () => {
           {/* Navigation Arrows */}
           <button
             onClick={() => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-secondary-400 hover:text-white transition-colors"
           >
             <span className="material-icons">chevron_left</span>
           </button>
           <button
             onClick={() => setCurrentIndex((prev) => (prev + 1) % testimonials.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary-500 hover:text-white transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-secondary-400 hover:text-white transition-colors"
           >
             <span className="material-icons">chevron_right</span>
           </button>

@@ -6,9 +6,9 @@ const HeroSection = () => {
   const { t, language } = useLanguage();
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-secondary-300 via-primary-400 to-primary-500 overflow-hidden">
       {/* Organic blob shapes background */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-white rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-white rounded-full blur-2xl"></div>
@@ -19,7 +19,7 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-ambient">
+            <div className="inline-flex items-center space-x-2 bg-white/95 backdrop-blur-sm px-4 py-2 rounded-full shadow-ambient ring-1 ring-white/60">
               <span className="material-icons text-primary-600 text-sm">verified</span>
               <span className="text-label-sm text-primary-700 uppercase">
                 {t('hero.badge')}
@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/booking"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 rounded-lg hover:bg-neutral-100 transition-all shadow-ambient-lg hover:shadow-ambient font-semibold group transform hover:scale-105"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 rounded-lg hover:bg-secondary-50 transition-all shadow-ambient-lg hover:shadow-ambient font-semibold group transform hover:scale-105 ring-2 ring-white/50"
               >
                 {language === 'vi' ? 'Đặt lịch ngay' : 'Book Now'}
                 <span className="material-icons ml-2 group-hover:translate-x-1 transition-transform">
@@ -49,17 +49,17 @@ const HeroSection = () => {
               </Link>
               <button
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white rounded-lg hover:bg-white/10 transition-all shadow-lg font-semibold border-2 border-white/80 backdrop-blur-sm"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all shadow-lg font-semibold border-2 border-white/80 backdrop-blur-sm"
               >
                 {t('hero.exploreServices')}
               </button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-4 inline-flex items-center space-x-4 border border-white/20">
+            <div className="bg-white/20 backdrop-blur-md rounded-xl px-6 py-4 inline-flex items-center space-x-4 border border-white/40 shadow-lg">
               <div className="flex -space-x-1">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <span key={star} className="material-icons text-secondary-300 text-xl drop-shadow">
+                  <span key={star} className="material-icons text-secondary-100 text-xl drop-shadow">
                     star
                   </span>
                 ))}
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="relative rounded-xl overflow-hidden shadow-ambient-lg border-4 border-white/20">
+            <div className="relative rounded-xl overflow-hidden shadow-ambient-lg border-4 border-white/30">
               <img
                 src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=600&fit=crop"
                 alt="Happy pet at Green Paws"
@@ -83,9 +83,9 @@ const HeroSection = () => {
             </div>
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-ambient-lg p-6 max-w-xs animate-bounce-slow">
+            <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm rounded-xl shadow-ambient-lg p-6 max-w-xs animate-bounce-slow ring-1 ring-primary-100">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary-400 to-primary-500 rounded-lg flex items-center justify-center">
                   <span className="material-icons text-white">pets</span>
                 </div>
                 <div>

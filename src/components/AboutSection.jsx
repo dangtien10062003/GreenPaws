@@ -52,7 +52,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-xl bg-white texture-overlay">
+    <section className="py-xl bg-gradient-to-b from-white to-secondary-50/50 texture-overlay">
       <div className="container mx-auto px-6 lg:px-8 max-w-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - Interactive Mosaic Grid */}
@@ -92,8 +92,8 @@ const AboutSection = () => {
             </div>
             
             {/* Signature */}
-            <div className="absolute -bottom-8 right-4 bg-white rounded-lg shadow-ambient-lg p-4 border border-tertiary-200">
-              <p className="text-xs text-neutral-700 mb-1">{language === 'vi' ? 'Người sáng lập' : 'Founder'}</p>
+            <div className="absolute -bottom-8 right-4 bg-white/95 rounded-lg shadow-ambient-lg p-4 border border-primary-100">
+              <p className="text-xs text-primary-700/80 mb-1">{language === 'vi' ? 'Người sáng lập' : 'Founder'}</p>
               <div className="font-signature text-2xl text-primary-600">Green Paws Team</div>
             </div>
           </div>
@@ -101,24 +101,24 @@ const AboutSection = () => {
           {/* Right - Content */}
           <div className="space-y-6">
             <div className="inline-block">
-              <span className="text-primary-600 font-semibold text-label-sm uppercase">
+              <span className="text-secondary-500 font-semibold text-label-sm uppercase">
                 {language === 'vi' ? 'Về chúng tôi' : 'About Us'}
               </span>
             </div>
             
-            <h2 className="text-h2 font-heading font-bold text-neutral-900 leading-tight">
+            <h2 className="text-h2 font-heading font-bold text-primary-800 leading-tight">
               {language === 'vi' 
                 ? 'Hệ sinh thái chăm sóc thú cưng hàng đầu Việt Nam'
                 : "Vietnam's Leading Pet Care Ecosystem"}
             </h2>
 
-            <p className="text-body-lg text-neutral-700 leading-relaxed">
+            <p className="text-body-lg text-primary-700/85 leading-relaxed">
               {language === 'vi'
                 ? 'Green Paws không chỉ là nơi cung cấp dịch vụ chăm sóc thú cưng, mà còn là ngôi nhà thứ hai của các bé cưng. Với đội ngũ chuyên gia giàu kinh nghiệm và trang thiết bị hiện đại, chúng tôi cam kết mang đến trải nghiệm tốt nhất cho thú cưng của bạn.'
                 : "Green Paws is not just a pet care service provider, but a second home for your beloved pets. With our experienced team and modern facilities, we are committed to providing the best experience for your pets."}
             </p>
 
-            <p className="text-body-lg text-neutral-700 leading-relaxed">
+            <p className="text-body-lg text-primary-700/85 leading-relaxed">
               {language === 'vi'
                 ? 'Từ grooming, spa, huấn luyện đến khách sạn 5 sao, mọi dịch vụ đều được thực hiện với tình yêu thương và sự chuyên nghiệp cao nhất. Chúng tôi hiểu rằng thú cưng là thành viên trong gia đình, và chúng xứng đáng được chăm sóc tốt nhất.'
                 : 'From grooming, spa, training to 5-star hotel services, everything is done with love and the highest professionalism. We understand that pets are family members, and they deserve the best care.'}
@@ -128,11 +128,11 @@ const AboutSection = () => {
             <div id="about-stats" className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform shadow-ambient">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary-400 to-primary-500 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform shadow-ambient">
                     <span className="material-icons text-white text-2xl">{stat.icon}</span>
                   </div>
                   <p className="text-3xl font-bold text-primary-600 mb-1">{stat.number}</p>
-                  <p className="text-sm text-neutral-700 font-medium">{stat.label}</p>
+                  <p className="text-sm text-primary-700/85 font-medium">{stat.label}</p>
                 </div>
               ))}
             </div>

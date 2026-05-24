@@ -51,43 +51,43 @@ const FAQSection = () => {
   );
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-secondary-50/40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left - Content */}
           <div className="lg:sticky lg:top-24">
-            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
+            <span className="text-secondary-500 font-semibold text-sm uppercase tracking-wide">
               {language === 'vi' ? 'Câu hỏi thường gặp' : 'FAQ'}
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-800 mt-4 mb-6">
               {language === 'vi' 
                 ? 'Có câu hỏi? Chúng tôi có câu trả lời!'
                 : 'Have Questions? We Have Answers!'}
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-primary-700/80 mb-8">
               {language === 'vi'
                 ? 'Dưới đây là những câu hỏi thường gặp từ khách hàng. Nếu bạn có thắc mắc khác, đừng ngần ngại liên hệ với chúng tôi.'
                 : 'Below are frequently asked questions from customers. If you have other questions, don\'t hesitate to contact us.'}
             </p>
 
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-secondary-50 to-primary-50 rounded-2xl p-8 border border-primary-100">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-secondary-400 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="material-icons text-white">support_agent</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">
+                  <h3 className="font-bold text-primary-800 mb-2">
                     {language === 'vi' ? 'Vẫn cần hỗ trợ?' : 'Still Need Help?'}
                   </h3>
-                  <p className="text-gray-600 mb-2">
+                  <p className="text-primary-700/80 mb-2">
                     {language === 'vi'
                       ? 'Không tìm thấy câu trả lời?'
                       : 'Can\'t find the answer?'}
                   </p>
-                  <p className="text-gray-900 font-semibold mb-4">
+                  <p className="text-primary-800 font-semibold mb-4">
                     {language === 'vi' ? 'Gọi ngay Hotline:' : 'Call Hotline:'} <a href="tel:1900888666" className="text-primary-600">1900 888 666</a>
                   </p>
-                  <button className="inline-flex items-center px-6 py-2.5 bg-primary-500 text-white rounded-full hover:bg-primary-600 transition-colors font-medium">
+                  <button className="inline-flex items-center px-6 py-2.5 bg-primary-500 text-white rounded-full hover:bg-secondary-500 transition-colors font-medium">
                     <span className="material-icons text-sm mr-2">chat</span>
                     {language === 'vi' ? 'Chat ngay' : 'Chat Now'}
                   </button>
@@ -105,9 +105,9 @@ const FAQSection = () => {
                 placeholder={language === 'vi' ? 'Tìm kiếm câu hỏi...' : 'Search questions...'}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-5 py-3.5 pl-12 border-2 border-gray-200 rounded-2xl focus:border-primary-500 focus:outline-none"
+                className="w-full px-5 py-3.5 pl-12 border-2 border-primary-100 rounded-2xl focus:border-primary-500 focus:outline-none bg-white/95"
               />
-              <span className="material-icons absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+              <span className="material-icons absolute left-4 top-1/2 -translate-y-1/2 text-primary-300">
                 search
               </span>
             </div>
@@ -118,13 +118,13 @@ const FAQSection = () => {
                 filteredFaqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-primary-300 transition-colors"
+                    className="bg-white/95 border-2 border-primary-100 rounded-2xl overflow-hidden hover:border-secondary-200 transition-colors"
                   >
                     <button
                       onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                       className="w-full px-6 py-5 flex items-center justify-between text-left"
                     >
-                      <span className="font-semibold text-gray-900 pr-4">
+                      <span className="font-semibold text-primary-800 pr-4">
                         {faq.question}
                       </span>
                       <span className={`material-icons text-primary-600 flex-shrink-0 transition-transform ${
@@ -138,14 +138,14 @@ const FAQSection = () => {
                         openIndex === index ? 'max-h-96' : 'max-h-0'
                       }`}
                     >
-                      <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                      <div className="px-6 pb-5 text-primary-700/80 leading-relaxed">
                         {faq.answer}
                       </div>
                     </div>
                   </div>
                 ))
               ) : (
-                <div className="text-center py-12 text-gray-500">
+                <div className="text-center py-12 text-primary-700/70">
                   {language === 'vi' ? 'Không tìm thấy câu hỏi phù hợp' : 'No matching questions found'}
                 </div>
               )}

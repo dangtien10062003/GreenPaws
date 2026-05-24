@@ -77,12 +77,6 @@ const Header = () => {
               {t('nav.gallery')}
             </Link>
             <Link
-              to="/blog"
-              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
-            >
-              {t('nav.blog')}
-            </Link>
-            <Link
               to="/contact"
               className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
             >
@@ -160,13 +154,6 @@ const Header = () => {
                 className="text-gray-700 hover:text-primary-600 py-2"
               >
                 {t('nav.gallery')}
-              </Link>
-              <Link
-                to="/blog"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-gray-700 hover:text-primary-600 py-2"
-              >
-                {t('nav.blog')}
               </Link>
               <Link
                 to="/contact"
