@@ -66,14 +66,14 @@ const BookingPage = () => {
       {/* Floating Quick Contact for Booking Page */}
       <div className="fixed bottom-24 right-6 z-40 hidden lg:flex flex-col gap-3">
         <a
-          href="tel:1900888666"
+          href="tel:0767522868"
           className="w-12 h-12 rounded-full bg-white border border-primary-200 shadow-md hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 group"
-          title="Hotline: 1900 888 666"
+          title="Hotline: 076 752 2868"
         >
           <span className="material-icons text-primary-600 group-hover:text-primary-700 transition-colors">call</span>
         </a>
         <a
-          href="https://zalo.me/1900888666"
+          href="https://zalo.me/0767522868"
           target="_blank"
           rel="noreferrer"
           className="w-12 h-12 rounded-full bg-white border border-primary-200 shadow-md hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-50 group"
@@ -96,14 +96,14 @@ const BookingPage = () => {
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-primary-100 shadow-lg lg:hidden">
         <div className="grid grid-cols-3 divide-x divide-primary-100">
           <a
-            href="tel:1900888666"
+          href="tel:0767522868"
             className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"
           >
             <span className="material-icons text-primary-600 text-xl mb-1">phone</span>
             <span className="text-xs text-primary-700 font-medium">Gọi ngay</span>
           </a>
           <a
-            href="https://zalo.me/1900888666"
+          href="https://zalo.me/0767522868"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center py-3 hover:bg-primary-50 transition-colors active:bg-primary-100"

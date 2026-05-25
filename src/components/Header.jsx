@@ -36,9 +36,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <span className="material-icons text-primary-500 text-3xl group-hover:scale-110 transition-transform">
-              eco
-            </span>
+            <img
+              src="/src/670982121_932226586086499_6248645574862379120_n.jpg"
+              alt="Green Paws"
+              className="w-10 h-10 object-cover rounded transition-transform group-hover:scale-110"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-lg text-primary-600 leading-tight">Green Paws</span>
             </div>

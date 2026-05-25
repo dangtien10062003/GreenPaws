@@ -17,15 +17,15 @@ const FloatingContactButtons = () => {
       id: 'phone',
       icon: 'phone',
       label: language === 'vi' ? 'Gọi ngay' : 'Call Now',
-      href: 'tel:1900888666',
+      href: 'tel:0767522868',
       color: 'bg-primary-500 hover:bg-primary-600',
-      number: '1900 888 666'
+      number: '076 752 2868'
     },
     {
       id: 'zalo',
       icon: 'chat',
       label: 'Zalo',
-      href: 'https://zalo.me/1900888666',
+      href: 'https://zalo.me/0767522868',
       color: 'bg-blue-500 hover:bg-blue-600',
     },
     {
@@ -95,7 +95,7 @@ const FloatingContactButtons = () => {
       <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-neutral-200 bg-white/95 backdrop-blur-sm shadow-ambient-lg lg:hidden pb-[env(safe-area-inset-bottom)]">
         <div className="grid grid-cols-4 gap-2 px-3 py-2">
           <a
-            href="tel:1900888666"
+            href="tel:0767522868"
             className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-primary-50 active:bg-primary-100 transition-colors"
           >
             <span className="material-icons text-primary-600 text-xl">phone</span>
@@ -104,7 +104,7 @@ const FloatingContactButtons = () => {
             </span>
           </a>
           <a
-            href="https://zalo.me/1900888666"
+            href="https://zalo.me/0767522868"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center rounded-xl py-2 hover:bg-blue-50 active:bg-blue-100 transition-colors"

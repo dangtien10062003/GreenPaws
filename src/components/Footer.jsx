@@ -12,8 +12,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <span className="material-icons text-secondary-300 text-3xl">eco</span>
+            <div className="flex items-center space-x-3">
+              <img
+                src="/src/670982121_932226586086499_6248645574862379120_n.jpg"
+                alt="Green Paws"
+                className="w-12 h-12 object-cover rounded-full"
+              />
               <span className="font-bold text-xl">Green Paws</span>
             </div>
             <p className="text-primary-100 text-sm leading-relaxed">
@@ -34,22 +38,34 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">{t('footer.services.title')}</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/service/grooming" className="text-primary-100 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/service/grooming"
+                  className="text-primary-100 hover:text-white transition-colors text-sm"
+                >
                   {t('footer.services.grooming')}
                 </Link>
               </li>
               <li>
-                <Link to="/service/spa" className="text-primary-100 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/service/spa"
+                  className="text-primary-100 hover:text-white transition-colors text-sm"
+                >
                   {t('footer.services.spa')}
                 </Link>
               </li>
               <li>
-                <Link to="/service/training" className="text-primary-100 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/service/training"
+                  className="text-primary-100 hover:text-white transition-colors text-sm"
+                >
                   {t('footer.services.training')}
                 </Link>
               </li>
               <li>
-                <Link to="/service/hotel" className="text-primary-100 hover:text-white transition-colors text-sm">
+                <Link
+                  to="/service/hotel"
+                  className="text-primary-100 hover:text-white transition-colors text-sm"
+                >
                   {t('footer.services.hotel')}
                 </Link>
               </li>
@@ -93,7 +109,10 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-sm">
                 <span className="material-icons text-secondary-300 text-lg">call</span>
-                <a href={`tel:${t('footer.contact.phone')}`} className="text-primary-100 hover:text-white transition-colors">
+                <a
+                  href={`tel:${String(t('footer.contact.phone')).replace(/\s+/g, '')}`}
+                  className="text-primary-100 hover:text-white transition-colors"
+                >
                   {t('footer.contact.phone')}
                 </a>
               </li>
@@ -109,9 +128,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-primary-600 mt-12 pt-8 text-center">
-          <p className="text-primary-200 text-sm">
-            {t('footer.copyright')}
-          </p>
+          <p className="text-primary-200 text-sm">{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
@@ -119,3 +136,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

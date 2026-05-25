@@ -10,8 +10,8 @@ const FAQSection = () => {
     {
       question: language === 'vi' ? 'Làm thế nào để đặt lịch dịch vụ?' : 'How to book a service?',
       answer: language === 'vi' 
-        ? 'Bạn có thể đặt lịch trực tuyến qua website, gọi hotline 1900 888 666, hoặc đến trực tiếp cơ sở của chúng tôi. Chúng tôi khuyến khích đặt lịch trước để đảm bảo có chỗ.'
-        : 'You can book online via website, call hotline 1900 888 666, or visit our facility directly. We recommend booking in advance to ensure availability.',
+        ? 'Bạn có thể đặt lịch trực tuyến qua website, gọi hotline 076 752 2868, hoặc đến trực tiếp cơ sở của chúng tôi. Chúng tôi khuyến khích đặt lịch trước để đảm bảo có chỗ.'
+        : 'You can book online via website, call hotline 076 752 2868, or visit our facility directly. We recommend booking in advance to ensure availability.',
     },
     {
       question: language === 'vi' ? 'Thú cưng của tôi cần chuẩn bị gì trước khi sử dụng dịch vụ?' : 'What should my pet prepare before using the service?',
@@ -85,7 +85,8 @@ const FAQSection = () => {
                       : 'Can\'t find the answer?'}
                   </p>
                   <p className="text-primary-800 font-semibold mb-4">
-                    {language === 'vi' ? 'Gọi ngay Hotline:' : 'Call Hotline:'} <a href="tel:1900888666" className="text-primary-600">1900 888 666</a>
+                  {language === 'vi' ? 'Gọi ngay Hotline:' : 'Call Hotline:'} <a href="tel:0767522868" className="text-primary-600">076 752 2868</a>
+
                   </p>
                   <button className="inline-flex items-center px-6 py-2.5 bg-primary-500 text-white rounded-full hover:bg-secondary-500 transition-colors font-medium">
                     <span className="material-icons text-sm mr-2">chat</span>

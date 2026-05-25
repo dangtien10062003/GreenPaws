@@ -13,16 +13,10 @@ const ContactSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const checkWorkingHours = () => {
-      const now = new Date();
-      const hour = now.getHours();
-      setIsOpen(hour >= 8 && hour < 20);
-    };
-    
-    checkWorkingHours();
-    const interval = setInterval(checkWorkingHours, 60000);
-    return () => clearInterval(interval);
+    // Luôn mở cửa
+    setIsOpen(true);
   }, []);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,13 +28,13 @@ const ContactSection = () => {
     {
       icon: 'location_on',
       title: language === 'vi' ? 'Địa chỉ' : 'Address',
-      content: '123 Đường Thảo Điền, Quận 2, TP. Hồ Chí Minh',
+      content: '1 St floor, E Block - SH04 Ecogreen - Quận 7, Ho Chi Minh City, Vietnam',
     },
     {
       icon: 'call',
       title: language === 'vi' ? 'Hotline' : 'Hotline',
-      content: '1900 888 666',
-      link: 'tel:1900888666',
+      content: '076 752 2868',
+      link: 'tel:0767522868',
     },
     {
       icon: 'mail',
@@ -51,9 +45,9 @@ const ContactSection = () => {
     {
       icon: 'schedule',
       title: language === 'vi' ? 'Giờ làm việc' : 'Working Hours',
-      content: language === 'vi' ? 'T2 - CN: 8:00 - 20:00' : 'Mon - Sun: 8:00 - 20:00',
-      status: isOpen ? (language === 'vi' ? 'Đang mở cửa' : 'Open Now') : (language === 'vi' ? 'Đã đóng cửa' : 'Closed'),
-      statusColor: isOpen ? 'text-green-600' : 'text-red-600'
+      content: 'Luôn mở cửa',
+      status: 'Luôn mở cửa',
+      statusColor: 'text-green-600'
     },
   ];
 
@@ -231,7 +225,7 @@ const ContactSection = () => {
         {/* Google Maps Dark Mode */}
         <div className="mt-12 rounded-2xl overflow-hidden shadow-xl h-96 relative">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1258964793!2d106.73076931533417!3d10.803614161678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527c2f8f30911%3A0x36ac5f3da654f629!2zVGjhuqNvIMSQaeG7gW4sIFF14bqtbiAyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1234567890&style=feature:all|element:geometry|color:0x242f3e&style=feature:all|element:labels.text.stroke|color:0x242f3e&style=feature:all|element:labels.text.fill|color:0x746855&style=feature:water|element:geometry|color:0x17263c"
+            src="https://www.google.com/maps/place/Green+Paws+-+Pet+Family/@10.718697,106.613598,17z/data=!4m14!1m7!3m6!1s0x31752d00556ace83:0xd9bde1adb7039614!2sGreen+Paws+-+Pet+Family!8m2!3d10.7183122!4d106.6175784!16s%2Fg%2F11z72tzfbp!3m5!1s0x31752d00556ace83:0xd9bde1adb7039614!8m2!3d10.7183122!4d106.6175784!16s%2Fg%2F11z72tzfbp?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
             width="100%"
             height="100%"
             style={{ border: 0, filter: 'grayscale(20%) contrast(1.1)' }}
