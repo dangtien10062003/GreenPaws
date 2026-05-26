@@ -7,8 +7,8 @@ const BeforeAfterSlider = () => {
   const sliderRef = useRef(null);
   const isDraggingRef = useRef(false);
 
-  const beforeImage = 'https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-4.0.3&w=800&h=500&fit=crop';
-  const afterImage = 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&w=800&h=500&fit=crop';
+  const beforeImage = '/700368813_122113049558777387_1895669214629912441_n.jpg';
+  const afterImage = '/701281039_122113049528777387_1647336495771886830_n.jpg';
 
   useEffect(() => {
     const container = containerRef.current;

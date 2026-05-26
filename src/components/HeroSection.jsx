@@ -75,7 +75,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative rounded-xl overflow-hidden shadow-ambient-lg border-4 border-white/30">
               <img
-                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=600&fit=crop"
+                src="/701941717_122113049522777387_9074954875320149734_n.jpg"
                 alt="Happy pet at Green Paws"
                 className="w-full h-[400px] lg:h-[600px] object-cover"
               />

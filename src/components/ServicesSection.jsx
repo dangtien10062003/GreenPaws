@@ -11,7 +11,7 @@ const ServicesSection = () => {
       {
         id: 'grooming',
         icon: 'content_cut',
-        image: 'https://images.unsplash.com/photo-1560807707-8cc77767d783?w=1200&h=700&fit=crop',
+        image: '/686360687_122110595954777387_238474384177503531_n.jpg',
         badge: language === 'vi' ? 'Bán chạy' : 'Best Seller',
         title: language === 'vi' ? 'Grooming' : 'Grooming',
         description:
@@ -25,7 +25,7 @@ const ServicesSection = () => {
       {
         id: 'spa',
         icon: 'spa',
-        image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1200&h=700&fit=crop',
+        image: '/686856014_122110595930777387_4753625640173522581_n.jpg',
         badge: language === 'vi' ? 'Ưu đãi' : 'Special Offer',
         title: language === 'vi' ? 'Spa & Relax' : 'Spa & Relax',
         description:
@@ -39,7 +39,7 @@ const ServicesSection = () => {
       {
         id: 'training',
         icon: 'school',
-        image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&h=700&fit=crop',
+        image: '/687687899_122110595918777387_8944861209107405756_n.jpg',
         badge: language === 'vi' ? 'Giá trị lâu dài' : 'Long-term Value',
         title: language === 'vi' ? 'Training' : 'Training',
         description:
@@ -53,7 +53,7 @@ const ServicesSection = () => {
       {
         id: 'hotel',
         icon: 'hotel',
-        image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1200&h=700&fit=crop',
+        image: '/699996870_122113049546777387_4096142762144901156_n.jpg',
         badge: language === 'vi' ? 'Chăm sóc 24/7' : '24/7 Care',
         title: language === 'vi' ? 'Pet Hotel' : 'Pet Hotel',
         description:

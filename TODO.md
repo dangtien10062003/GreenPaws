@@ -15,6 +15,12 @@
 - [x] Đổi đường dẫn ảnh logo sang import asset chuẩn Vite trong Header/Footer
 - [x] Verify build sau khi sửa đường dẫn asset
 
+- [ ] Thay một phần ảnh hiện tại bằng ảnh mới trong thư mục public
+- [ ] Cập nhật HeroSection dùng ảnh mới
+- [ ] Cập nhật ServicesSection dùng ảnh mới cho các service
+- [ ] Cập nhật BeforeAfterSlider dùng ảnh mới
+- [ ] Build verify sau khi đổi ảnh
+
 
 
 
