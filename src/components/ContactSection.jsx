@@ -225,7 +225,7 @@ const ContactSection = () => {
         {/* Google Maps Dark Mode */}
         <div className="mt-12 rounded-2xl overflow-hidden shadow-xl h-96 relative">
           <iframe
-            src="https://www.google.com/maps/place/Green+Paws+-+Pet+Family/@10.718697,106.613598,17z/data=!4m14!1m7!3m6!1s0x31752d00556ace83:0xd9bde1adb7039614!2sGreen+Paws+-+Pet+Family!8m2!3d10.7183122!4d106.6175784!16s%2Fg%2F11z72tzfbp!3m5!1s0x31752d00556ace83:0xd9bde1adb7039614!8m2!3d10.7183122!4d106.6175784!16s%2Fg%2F11z72tzfbp?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d524.1362372548441!2d106.72346152276273!3d10.747472110587209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9caf03a04d%3A0xfbb2bfcc124924a0!2sBlock%20E%2C%20Eco%20Green%20S%C3%A0i%20G%C3%B2n!5e0!3m2!1svi!2s!4v1779763006621!5m2!1svi!2s"
             width="100%"
             height="100%"
             style={{ border: 0, filter: 'grayscale(20%) contrast(1.1)' }}
