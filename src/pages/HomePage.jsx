@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
-import BeforeAfterSlider from '../components/shared/BeforeAfterSlider';
+import BenefitsSection from '../components/BenefitsSection';
 import CTASection from '../components/CTASection';
 import SectionReveal from '../components/shared/SectionReveal';
 
@@ -17,7 +17,7 @@ const HomePage = () => {
       </SectionReveal>
       <SectionReveal delay={180} className="relative z-10">
         <div className="bg-gradient-to-b from-white to-secondary-50/30">
-          <BeforeAfterSlider />
+          <BenefitsSection />
         </div>
       </SectionReveal>
       <SectionReveal delay={260}>

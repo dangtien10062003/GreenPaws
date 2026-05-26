@@ -7,6 +7,10 @@
 - [x] Build/test: run `npm run build` after UI update
 - [x] Rework Services UI to prevent text overlay on images (text below image) and rebuild
 
+- [x] Thay section BeforeAfter bằng section phù hợp hơn trên HomePage
+- [x] Cập nhật import và JSX trong `src/pages/HomePage.jsx` sang `BenefitsSection`
+- [x] Rà soát tham chiếu cũ để tránh lỗi build
+
 
 
 
