@@ -11,6 +11,10 @@
 - [x] Cập nhật import và JSX trong `src/pages/HomePage.jsx` sang `BenefitsSection`
 - [x] Rà soát tham chiếu cũ để tránh lỗi build
 
+- [x] Fix logo/icon không hiển thị ở Header/Footer khi deploy
+- [x] Đổi đường dẫn ảnh logo sang import asset chuẩn Vite trong Header/Footer
+- [x] Verify build sau khi sửa đường dẫn asset
+
 
 
 

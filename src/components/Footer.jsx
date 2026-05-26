@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import brandLogo from '../670982121_932226586086499_6248645574862379120_n.jpg';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img
-                src="/src/670982121_932226586086499_6248645574862379120_n.jpg"
+                src={brandLogo}
                 alt="Green Paws"
                 className="w-12 h-12 object-cover rounded-full"
               />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
+import brandLogo from '../670982121_932226586086499_6248645574862379120_n.jpg';
 
 const Header = () => {
   const { language, toggleLanguage, t } = useLanguage();
@@ -37,7 +38,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <img
-              src="/src/670982121_932226586086499_6248645574862379120_n.jpg"
+              src={brandLogo}
               alt="Green Paws"
               className="w-10 h-10 object-cover rounded transition-transform group-hover:scale-110"
             />
